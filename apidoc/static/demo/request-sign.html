@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>请求签名示例</title>
+</head>
+<body>
+    <div id="main">
+        <div class="box">
+            <p class="title">1.请求参数(<span class="front-grey">未签名前</span>):</p>
+            <pre>{
+    "userId": 1161,
+    "orderNo": "60ec07a0-4b1b-4f9f-b85a-47770f098fec",
+    "timestamp": 1599726784
+}</pre>
+        </div>
+
+        <div class="box">
+            <p class="title">2.签名盐值-salt:</p>
+            <pre>i4emhiupn7d5f6vufafya90z7nmejs38</pre>
+        </div>
+
+        <div class="box">
+            <p class="title">3.排序拼接字符串:</p>
+            <p class="description">请求参数按照key进行排序用&进行连接,加上salt </p>
+            <pre>orderNo=60ec07a0-4b1b-4f9f-b85a-47770f098fec&userId=1161&#38;timestamp=1599726784i4emhiupn7d5f6vufafya90z7nmejs38</pre>
+        </div>
+
+        <div class="box">
+            <p class="title">4.md5:</p>
+            <pre>e7aec712fd5886aceea0cbd3f4e8f69a</pre>
+        </div>
+
+        <div class="box">
+            <p class="title">4.最终请求参数(<span class="front-grey">签名后</span>):</p>
+            <pre>{
+    "userId": 1161,
+    "orderNo": "60ec07a0-4b1b-4f9f-b85a-47770f098fec",
+    "timestamp": 1599726784,
+    "sign": e7aec712fd5886aceea0cbd3f4e8f69a
+}</pre>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    *{padding:0;margin:0;font-size:12px}#main{width:1000px;margin:0px auto;}.front-grey{color:#888888;}.box{}.box > .title{margin-top:2px;height:30px;line-height:40px;font-size:15px;font-weight:bold;color:#1b4b72;}.box > .description{height:25px;line-height:25px;color:#AAAAAA;}pre{background:#f1f1f1;border:1px solid #AAAAAA;min-height:20px;line-height:20px;padding:5px;}.my-table{border-collapse:collapse;border-spacing:0;line-height:25px;min-width:1000px;max-width:95%;border-color:#EEEEEE;text-align:center;outline:0;color:#333333}.my-table thead{background:#CCCCCC;color:#000000}.my-table tbody{}
+</style>

@@ -1,0 +1,31 @@
+{
+    "name": "认证服务-api",
+    "version": "0.0.1",
+    "description": "",
+    "title": "认证服务-api",
+    "envList":[
+        {
+            "key": "local",
+            "name": "本地环境",
+            "url": "http://localhost:9770",
+            "Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGF0YSI6ImV5SnBkaUk2SW5STldWRmlOM3A2ZEV3NVpFZDNiSFU1Y1dSUVNHYzlQU0lzSW5aaGJIVmxJam9pV1VSc01uQjRVWGxEWXl0eGVqaEpjV2hEVjJGT1NtVkRRakZPVjFOTk4yOUxWM1ExUzFkeU5UaHFjbFpXSzNOd1IwMXFkazFzZWxZNWJXSk1jMmx0TlRGaFQwdHhhRzkyUTFoSFVYWm9UVk5DY1VsWk16ZzNjelpxWld4RFFqQk5ZVFp1ZG5FNVMwOU5XVGc5SWl3aWJXRmpJam9pTURNME0yTmxPVFU0Tm1Fek9EZGlNV0kyTjJJNE5tSmpObVV4TVRNd09EWm1ZbVZtTURKaE9ERm1ZMll6TTJRMFpqSTNPRFF4WVRrM09XUmpabU13TXlKOSIsImlhdCI6MTU5ODE4ODA5MCwiZXhwIjoxNjAwNzgwMDkwLCJuYmYiOjE2MDA3ODAwOTAsImp0aSI6IjBlMTdlOWM2Mjc5YmY4ZDU2MThjMmM2MWIzMTVmZWNlIn0.nCYlxc20ibrZIb7upQmlwZwifIR8O5QfjXBSatcJyRQ",
+            "default": false
+        },
+        {
+            "key": "dev",
+            "name": "开发环境",
+            "url": "http://18.163.61.9:9770",
+            "Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGF0YSI6ImV5SnBkaUk2SW5STldWRmlOM3A2ZEV3NVpFZDNiSFU1Y1dSUVNHYzlQU0lzSW5aaGJIVmxJam9pV1VSc01uQjRVWGxEWXl0eGVqaEpjV2hEVjJGT1NtVkRRakZPVjFOTk4yOUxWM1ExUzFkeU5UaHFjbFpXSzNOd1IwMXFkazFzZWxZNWJXSk1jMmx0TlRGaFQwdHhhRzkyUTFoSFVYWm9UVk5DY1VsWk16ZzNjelpxWld4RFFqQk5ZVFp1ZG5FNVMwOU5XVGc5SWl3aWJXRmpJam9pTURNME0yTmxPVFU0Tm1Fek9EZGlNV0kyTjJJNE5tSmpObVV4TVRNd09EWm1ZbVZtTURKaE9ERm1ZMll6TTJRMFpqSTNPRFF4WVRrM09XUmpabU13TXlKOSIsImlhdCI6MTU5ODE4ODA5MCwiZXhwIjoxNjAwNzgwMDkwLCJuYmYiOjE2MDA3ODAwOTAsImp0aSI6IjBlMTdlOWM2Mjc5YmY4ZDU2MThjMmM2MWIzMTVmZWNlIn0.nCYlxc20ibrZIb7upQmlwZwifIR8O5QfjXBSatcJyRQ",
+            "default": true
+        },
+        {
+            "key": "prod",
+            "name": "生产环境",
+            "url": "http://www.whitesand-fm.vip/index.php",
+            "Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGF0YSI6ImV5SnBkaUk2SW5STldWRmlOM3A2ZEV3NVpFZDNiSFU1Y1dSUVNHYzlQU0lzSW5aaGJIVmxJam9pV1VSc01uQjRVWGxEWXl0eGVqaEpjV2hEVjJGT1NtVkRRakZPVjFOTk4yOUxWM1ExUzFkeU5UaHFjbFpXSzNOd1IwMXFkazFzZWxZNWJXSk1jMmx0TlRGaFQwdHhhRzkyUTFoSFVYWm9UVk5DY1VsWk16ZzNjelpxWld4RFFqQk5ZVFp1ZG5FNVMwOU5XVGc5SWl3aWJXRmpJam9pTURNME0yTmxPVFU0Tm1Fek9EZGlNV0kyTjJJNE5tSmpObVV4TVRNd09EWm1ZbVZtTURKaE9ERm1ZMll6TTJRMFpqSTNPRFF4WVRrM09XUmpabU13TXlKOSIsImlhdCI6MTU5ODE4ODA5MCwiZXhwIjoxNjAwNzgwMDkwLCJuYmYiOjE2MDA3ODAwOTAsImp0aSI6IjBlMTdlOWM2Mjc5YmY4ZDU2MThjMmM2MWIzMTVmZWNlIn0.nCYlxc20ibrZIb7upQmlwZwifIR8O5QfjXBSatcJyRQ",
+            "default": false
+        }
+    ],
+    "requestSignDescriptionUrl": "http://18.163.61.9:9830/request-sign.html",
+    "responseDescriptionUrl": "http://18.163.61.9:9830/apiDoc/response.html"
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>响应解释</title>
+</head>
+<body>
+<div id="main">
+    <div class="box">
+        <p class="title">1.普通-响应示例:</p>
+        <pre>{
+    "message": "",
+    "code": 0,
+    "data": 100,
+    "extendInfo": [],
+    "timeStamp": 0,
+    "execTime": 0
+}</pre>
+        <p class="description">data为有效可用数据,message只有当code>0时候有效,错误提示 </p>
+        <p class="title">code解释:</p>
+        <table class="my-table" border="1" style="width: 800px;">
+            <thead>
+            <tr>
+                <td>code</td>
+                <td>解释</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>0</td>
+                <td>通用正确返回</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>通用错误返回</td>
+            </tr>
+            <tr>
+                <td>1001</td>
+                <td>token失效</td>
+            </tr>
+            <tr>
+                <td>1002</td>
+                <td>token过期,可以通过认证服务的: [刷新token] 进行token置换</td>
+            </tr>
+            <tr>
+                <td>1003</td>
+                <td>访问频率超出</td>
+            </tr>
+            <tr>
+                <td>1004</td>
+                <td>服务器内部错误</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="box">
+        <p class="title">2.列表数据-响应示例:</p>
+        <pre>{
+    "message": "",
+    "code": 0,
+    "data": {
+        "list": [
+            {
+                "id": 68,
+                "orderNo": "60ec07a0-4b1b-4f9f-b85a-47770f098fec",
+                "agentId": 1,
+                "userId": 1
+            },....
+        ],
+        "count": 29
+    },
+    "extendInfo": [],
+    "timeStamp": 0,
+    "execTime": 0
+}</pre>
+        <p class="description">data.list为返回【列表数据】,data.list为返回【列表条数】 </p>
+    </div>
+</div>
+</body>
+</html>
+<style>
+    *{padding:0;margin:0;font-size:12px}#main{width:1000px;margin:0px auto;}.front-grey{color:#888888;}.box{}.box > .title{margin-top:2px;height:30px;line-height:40px;font-size:15px;font-weight:bold;color:#1b4b72;}.box > .description{height:25px;line-height:25px;color:#AAAAAA;}pre{background:#f1f1f1;border:1px solid #AAAAAA;min-height:20px;line-height:20px;padding:5px;}.my-table{border-collapse:collapse;border-spacing:0;line-height:25px;min-width:1000px;max-width:95%;border-color:#EEEEEE;text-align:center;outline:0;color:#333333}.my-table thead{background:#CCCCCC;color:#000000}.my-table tbody{}
+</style>
